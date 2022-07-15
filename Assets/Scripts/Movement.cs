@@ -22,7 +22,6 @@ public class Movement : MonoBehaviour
     int xMod;
     int yMod;
 
-    //[SerializeField] private LayerMask PlatformLayermask;
 
     private void Awake() {
         QualitySettings.vSyncCount = 0;
