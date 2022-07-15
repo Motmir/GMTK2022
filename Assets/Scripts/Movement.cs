@@ -93,7 +93,6 @@ public class Movement : MonoBehaviour
 
         if (moveVector.x == 0)
         {
-            Debug.Log("Input x == 0");
             if (Mathf.Abs(currMove.x) < speedCutoff)
             {
                 currMove.x = 0;
@@ -105,7 +104,6 @@ public class Movement : MonoBehaviour
 
         if (moveVector.y == 0)
         {
-            Debug.Log("Input y == 0");
             if (Mathf.Abs(currMove.y) < speedCutoff)
             {
                 currMove.y = 0;
@@ -118,9 +116,6 @@ public class Movement : MonoBehaviour
 
         if (Mathf.Abs(currMove.x) > maxSpeed) currMove.x = maxSpeed * curX;
         if (Mathf.Abs(currMove.y) > maxSpeed) currMove.y = maxSpeed * curY;
-
-        //Debug.Log("X axis:" + currMove.x);
-        //Debug.Log("Y axis:" + currMove.y);
 
 
         rigidbody2d.velocity = currMove;
