@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public float maxSpeed;
     public float speedLoss;
     public float speedCutoff;
+    public float turnModifier;
 
     //Booleans
     int xMod;
@@ -43,7 +44,7 @@ public class Movement : MonoBehaviour
 
     private void playerMove() 
     {
-        if (moveVector.x > 0) //Check if move right or left
+        if (moveVector.x > 0) //Check if accelerating right or left
         {
             xMod = 1;
         } else if (moveVector.x < 0)
@@ -51,7 +52,7 @@ public class Movement : MonoBehaviour
             xMod = -1;
         }
 
-        if (moveVector.y > 0) //Check if move up or down
+        if (moveVector.y > 0) //Check if accelerating up or down
         {
             yMod = 1;
         } else if (moveVector.y < 0)
@@ -59,9 +60,40 @@ public class Movement : MonoBehaviour
             yMod = -1;
         }
 
+        int curX;
+        int curY;
 
-        float speedY = Mathf.Abs(moveVector.y) * speed;
+        if (currMove.x >= 0) //Check if move right or left
+        {
+            curX = 1;
+        }
+        else
+        {
+            curX = -1;
+        }
+
+        if (currMove.y >= 0) //Check if move up or down
+        {
+            curY = 1;
+        }
+        else
+        {
+            curY = -1;
+        }
+
+
         float speedX = Mathf.Abs(moveVector.x) * speed;
+        float speedY = Mathf.Abs(moveVector.y) * speed;
+
+        if (curX != xMod)
+        {
+            speedX *= turnModifier;
+        }
+
+        if (curY != yMod)
+        {
+            speedY *= turnModifier;
+        }
 
         Vector3 movement = new Vector3(
             speedX * xMod, //x
@@ -71,25 +103,7 @@ public class Movement : MonoBehaviour
 
         currMove = currMove + movement;
 
-        int curX;
-        int curY;
-
-        if (currMove.x >= 0)
-        {
-            curX = 1;
-        } else
-        {
-            curX = -1;
-        }
         
-        if (currMove.y >= 0)
-        {
-            curY = 1;
-        }
-        else
-        {
-            curY = -1;
-        }
 
         if (moveVector.x == 0)
         {
