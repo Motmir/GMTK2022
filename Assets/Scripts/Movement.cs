@@ -39,10 +39,10 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        playerMove();
+        PlayerMove();
     }
 
-    private void playerMove() 
+    private void PlayerMove() 
     {
         if (moveVector.x > 0) //Check if accelerating right or left
         {
@@ -101,7 +101,7 @@ public class Movement : MonoBehaviour
             0 //z
             );
 
-        currMove = currMove + movement;
+        currMove += movement;
 
         
 
@@ -135,7 +135,7 @@ public class Movement : MonoBehaviour
         rigidbody2d.velocity = currMove;
     }
 
-    public void move(InputAction.CallbackContext context)
+    public void Move(InputAction.CallbackContext context)
     {
         moveVector = context.ReadValue<Vector2>();
         Debug.Log("Moving");
