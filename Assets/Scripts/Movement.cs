@@ -12,11 +12,11 @@ public class Movement : MonoBehaviour
     private Vector3 currMove;
     
     //Attributes
-    public float speed;
-    public float maxSpeed;
-    public float speedLoss;
-    public float speedCutoff;
-    public float turnModifier;
+    public float speed = 2;
+    public float maxSpeed = 9.25f;
+    public float speedLoss = 2;
+    public float speedCutoff = 3;
+    public float turnModifier = 6;
 
     //Booleans
     int xMod;
