@@ -135,50 +135,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &3393476881542913039
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3393476881542913037}
-  - component: {fileID: 3393476881542913038}
-  m_Layer: 0
-  m_Name: Dice
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3393476881542913037
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3393476881542913039}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.474041, y: -2.4608688, z: -27.828434}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1331864606797625874}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3393476881542913038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3393476881542913039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cacbf2657bdeeea498b492b3a5ecb93a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3393476881624204610
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,50 +2050,6 @@ MonoBehaviour:
   compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
   uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
   source: {fileID: 3393476883243635506}
---- !u!1 &3944884071203748410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9078215075966950864}
-  - component: {fileID: 1383646365832296639}
-  m_Layer: 0
-  m_Name: Dice (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9078215075966950864
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944884071203748410}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.474041, y: -2.4608688, z: -27.828434}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1331864606797625874}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1383646365832296639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3944884071203748410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cacbf2657bdeeea498b492b3a5ecb93a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8390748389641964753
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,6 +2064,7 @@ GameObject:
   - component: {fileID: 7798474979377518186}
   - component: {fileID: 3393476883000676834}
   - component: {fileID: 3393476883000676833}
+  - component: {fileID: 3393476883000676835}
   m_Layer: 0
   m_Name: MUSTHAVE
   m_TagString: Untagged
@@ -2174,9 +2087,6 @@ Transform:
   - {fileID: 3393476881771465875}
   - {fileID: 3393476882938137714}
   - {fileID: 3393476883243635505}
-  - {fileID: 3393476881542913037}
-  - {fileID: 7445165174617418920}
-  - {fileID: 9078215075966950864}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2192,9 +2102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4194cf5cbe67c9240a05f74878054ec7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeAttack: {fileID: 3393476881542913038}
-  activeDefence: {fileID: 8475523280802718053}
-  activeUtility: {fileID: 1383646365832296639}
+  activeAttack: {fileID: 0}
+  activeDefence: {fileID: 0}
+  activeUtility: {fileID: 0}
 --- !u!114 &3105139697470077221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2381,47 +2291,15 @@ MonoBehaviour:
   m_TrackedDeviceOrientationAction: {fileID: 0}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
---- !u!1 &9090386772992163589
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7445165174617418920}
-  - component: {fileID: 8475523280802718053}
-  m_Layer: 0
-  m_Name: Dice (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7445165174617418920
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9090386772992163589}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.474041, y: -2.4608688, z: -27.828434}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1331864606797625874}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8475523280802718053
+--- !u!114 &3393476883000676835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9090386772992163589}
+  m_GameObject: {fileID: 8390748389641964753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cacbf2657bdeeea498b492b3a5ecb93a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1733a03f068efc44e854121f7e25c986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
