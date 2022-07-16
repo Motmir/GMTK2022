@@ -4,38 +4,47 @@ using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
 {
-
+    //Attributes
     GameObject player;
-    public float detectionRange;
+    LineRenderer lineRenderer;
+    Rigidbody2D rb;
+    public float detectionRange, minSpeed, maxSpeed, speedLoss, timer;
     bool madeLine;
+    Vector3 movement, distance, goal;
+
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.Find("Player");
+        rb = transform.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        RandomMovement();
+        rb.velocity /= speedLoss;
         FindPlayer();
+        MoveToGoal();
     }
 
-    void RandomMovement()
+    void MoveToGoal()
     {
+        movement = goal - transform.position;
+        movement.Normalize();
 
+        rb.velocity = movement * Random.RandomRange(minSpeed, maxSpeed + 1);
     }
 
     void FindPlayer()
     {
-        Vector3 distance = player.transform.position - transform.position;
-        //Debug.Log("Dist: " + distance.magnitude);
+        distance = player.transform.position - transform.position;
+        distance.z = 0;
 
         if (distance.magnitude < detectionRange && !madeLine)
         {
             madeLine = true;
-            LineRenderer lineRenderer = new GameObject("Line").AddComponent<LineRenderer>();
+            lineRenderer = new GameObject("Line").AddComponent<LineRenderer>();
             lineRenderer.startColor = Color.black;
             lineRenderer.endColor = Color.black;
             lineRenderer.startWidth = 0.01f;
@@ -44,11 +53,39 @@ public class EnemyMovement : MonoBehaviour
             lineRenderer.useWorldSpace = true;
             lineRenderer.sortingOrder = 1;
             lineRenderer.sortingLayerName = "Entity";
-
-            //For drawing line in the world space, provide the x,y,z values
-            lineRenderer.SetPosition(0, transform.position); //x,y and z position of the starting point of the line
-            lineRenderer.SetPosition(1, player.transform.position);
-            Debug.Log("I see you!");
         }
+        
+        int layerMask = 1 << 8;
+        if (distance.magnitude < detectionRange && Physics2D.Raycast(transform.position, distance.normalized, distance.magnitude - 1, layerMask) == false)
+        {
+            if (Physics2D.Raycast(transform.position, distance.normalized, distance.magnitude - 1, layerMask) == false)
+            {
+                timer = 3;
+                goal = player.transform.position;
+                lineRenderer.SetPosition(0, transform.position); 
+                lineRenderer.SetPosition(1, player.transform.position);
+            }
+        } else
+        {
+            if (timer > 0)
+            {
+                timer -= Time.deltaTime;
+            }
+            else
+            {
+                goal = new Vector3(
+                    (transform.position.x + Random.Range(10, 20)) * Rand(), 
+                    (transform.position.y + Random.Range(10, 20)) * Rand(), 0);
+                timer = 3;
+            }
+        }
+        
+    }
+
+    int Rand()
+    {
+        int pos = Random.Range(1, 3);
+        pos = (int)Mathf.Pow(-1, pos);
+        return pos;
     }
 }

@@ -13,8 +13,8 @@ TagManager:
   - UI
   - Entities
   - Background
-  - 
-  - 
+  - Stage
+  - Player
   - 
   - 
   - 
@@ -41,9 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Entity
-    uniqueID: 1979576013
-    locked: 0
   - name: Stage
     uniqueID: 2519193441
+    locked: 0
+  - name: Entity
+    uniqueID: 1979576013
     locked: 0
