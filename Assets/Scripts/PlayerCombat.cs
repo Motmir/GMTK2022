@@ -19,4 +19,14 @@ public class PlayerCombat : MonoBehaviour
 
         Health -= damageLeft;
     }
+
+    public void AddShield(int amount)
+    {
+
+    }
+
+    public void AddHealth(int amount)
+    {
+
+    }
 }

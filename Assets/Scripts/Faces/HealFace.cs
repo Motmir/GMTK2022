@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IceFace : IFace
+public class HealthFace : IFace
 {
     GameObject player;
     PlayerCombat pComb;
@@ -17,6 +17,6 @@ public class IceFace : IFace
     public void Cast()
     {
         Start();
-        pComb.AddShield(ShieldAmount);
+        pComb.AddHealth(ShieldAmount);
     }
 }
