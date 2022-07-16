@@ -8,7 +8,7 @@ public class VineFace : IFace
     GameObject pfBullet, player;
     Camera cam;
     Vector3 mouse;
-    
+    Sprite icon;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +17,7 @@ public class VineFace : IFace
         pfBullet = (GameObject)Resources.Load("Vines");
         cam = player.GetComponentInChildren<Camera>();
         mouse = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        icon = (Sprite)Resources.Load("UtilityFaces/Vine");
     }
 
     public void Cast()
@@ -31,6 +32,6 @@ public class VineFace : IFace
 
     public Sprite GetSprite()
     {
-        throw new System.NotImplementedException();
+        return icon;
     }
 }

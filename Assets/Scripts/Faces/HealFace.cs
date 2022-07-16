@@ -7,11 +7,13 @@ public class HealthFace : IFace
     GameObject player;
     PlayerCombat pComb;
     public int ShieldAmount;
+    Sprite icon;
 
     void Start()
     {
         player = GameObject.Find("Player");
         pComb = player.transform.GetComponent<PlayerCombat>();
+        icon = (Sprite)Resources.Load("UtilityFaces/Heal");
     }
 
     public void Cast()
@@ -22,6 +24,6 @@ public class HealthFace : IFace
 
     public Sprite GetSprite()
     {
-        throw new System.NotImplementedException();
+        return icon;
     }
 }
