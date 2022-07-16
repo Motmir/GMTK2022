@@ -12,6 +12,10 @@ public class EnemyMovement : MonoBehaviour
     bool madeLine;
     Vector3 movement, distance, goal;
 
+    public void OnTriggerEnter(Collider collider)
+    {
+        
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -23,9 +27,7 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        rb.velocity /= speedLoss;
         FindPlayer();
-        MoveToGoal();
     }
 
     void MoveToGoal()
@@ -62,6 +64,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 timer = 3;
                 goal = player.transform.position;
+                MoveToGoal();
                 lineRenderer.SetPosition(0, transform.position); 
                 lineRenderer.SetPosition(1, player.transform.position);
             }
@@ -76,6 +79,7 @@ public class EnemyMovement : MonoBehaviour
                 goal = new Vector3(
                     (transform.position.x + Random.Range(10, 20)) * Rand(), 
                     (transform.position.y + Random.Range(10, 20)) * Rand(), 0);
+                MoveToGoal();
                 timer = 3;
             }
         }

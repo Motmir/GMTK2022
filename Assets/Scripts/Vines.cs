@@ -19,7 +19,6 @@ public class Vines : ParentBullet
             Debug.Log(targetsHit);
             hit.Slow(slow, slowTime);
         }
-        
     }
 
     public override void Setup(Vector3 Dir)

@@ -13,6 +13,8 @@ public class EnemyCombat : ParentEnemyCombat
         if (Health <= 0)
         {
             Destroy(this.gameObject);
+            GameObject enemy = (GameObject)Resources.Load("Enemy");
+            GameObject bulletTransform = GameObject.Instantiate(enemy, new Vector3(0,0,0), Quaternion.identity);
         }
     }
 
