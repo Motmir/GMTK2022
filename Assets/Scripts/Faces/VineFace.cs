@@ -28,4 +28,9 @@ public class VineFace : IFace
         GameObject bulletTransform = GameObject.Instantiate(pfBullet, spellSpawn, Quaternion.identity);
         bulletTransform.GetComponent<Vines>().Setup(mouse);
     }
+
+    public Sprite GetSprite()
+    {
+        throw new System.NotImplementedException();
+    }
 }
