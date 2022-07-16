@@ -112,7 +112,7 @@ TextureImporter:
         width: 80
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -120,6 +120,48 @@ TextureImporter:
       bones: []
       spriteID: 56c4c27c874dd6741b051fa347c3e6a2
       internalID: 1703592144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menuButton
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 485
+        width: 283
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93046f0073df1f641a2fd47689c541c7
+      internalID: -638395113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: menuBarPressed
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 407
+        width: 283
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ae4b4f78076a74baf694e4ab336733
+      internalID: 697842042
       vertices: []
       indices: 
       edges: []
@@ -135,6 +177,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      menuButton: -638395113
+      menuBarPressed: 697842042
       itemBox: 1703592144
   spritePackingTag: 
   pSDRemoveMatte: 0

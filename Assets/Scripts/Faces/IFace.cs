@@ -6,4 +6,7 @@ public interface IFace
 {
 
     public void Cast();
+
+    public Sprite GetSprite();
+
 }
