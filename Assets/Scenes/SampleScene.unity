@@ -600,7 +600,8 @@ GameObject:
   - component: {fileID: 368426838}
   - component: {fileID: 368426842}
   - component: {fileID: 368426843}
-  m_Layer: 0
+  - component: {fileID: 368426844}
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +694,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1775773855
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: -1
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.24363652, g: 0.6797803, b: 0.6886792, a: 1}
@@ -828,11 +829,39 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 16e6188b-1171-4ace-a3af-1a39e9996a72
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 368426844}
+        m_TargetAssemblyTypeName: TestCast, Assembly-CSharp
+        m_MethodName: UseEffect
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 59c953aa-f3bb-4be3-a6f3-0a2eb9f7db24
+    m_ActionName: Player/Cast[/Mouse/leftButton,/Mouse/rightButton,/Keyboard/space]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 519420031}
+--- !u!114 &368426844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368426837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 756b720ec73591145b3602c4e915fd7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &407346043
 GameObject:
   m_ObjectHideFlags: 0
@@ -928,7 +957,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 23
+    m_Bits: 2147483647
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1132,7 +1161,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 722613203}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enviorment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1951,7 +1980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1714011427}
   - component: {fileID: 1714011428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shitty_room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2011,9 +2040,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1775773855
+  m_SortingLayer: 2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 21300000, guid: cd97bafa5270de84fb6647ddc7552583, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2059,6 +2088,7 @@ GameObject:
   - component: {fileID: 1820735653}
   - component: {fileID: 1820735652}
   - component: {fileID: 1820735650}
+  - component: {fileID: 1820735654}
   m_Layer: 5
   m_Name: Cube
   m_TagString: Untagged
@@ -2148,6 +2178,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820735648}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1820735654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820735648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 701417e68b2260c49861a4ee00717184, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1886297497
 GameObject:
   m_ObjectHideFlags: 0

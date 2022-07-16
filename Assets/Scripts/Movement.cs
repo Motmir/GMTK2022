@@ -136,7 +136,5 @@ public class Movement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        moveVector = context.ReadValue<Vector2>();
-        Debug.Log("Moving");
-    }
+        moveVector = context.ReadValue<Vector2>();    }
 }

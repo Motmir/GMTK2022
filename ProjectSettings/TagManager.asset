@@ -8,10 +8,10 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Spell
   - Water
   - UI
-  - Enteties
+  - Entities
   - Background
   - 
   - 
@@ -40,6 +40,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Entity
+    uniqueID: 1979576013
     locked: 0
   - name: Stage
     uniqueID: 2519193441

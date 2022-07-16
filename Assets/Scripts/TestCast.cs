@@ -8,7 +8,15 @@ public class TestCast : MonoBehaviour
     public void UseEffect(InputAction.CallbackContext context)
     {
         Debug.Log(context);
-        IFace face = new Fireball();
-        face.Cast();
+        if (context.started)
+        {
+            if (context.control.name == "leftButton")
+            {
+                IFace face = new FireballFace();
+                face.Cast();
+            }
+        }
+        
+        
     }
 }
