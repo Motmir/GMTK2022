@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Dice : MonoBehaviour
+public class Dice
 {
     private SpriteRenderer renderer = null;
     //------------------------------------------
@@ -19,10 +19,11 @@ public class Dice : MonoBehaviour
     private float faceChangeTime = 0;
     private float faceChangeFinishTime = 0;
 
-    private void Awake()
+    public Dice(enumFace[] facelist)
     {
-        for (int i = 0; i < faces.Length; i++){
-            IFace f = new EmpyFace();
+        for (int i = 0; i < facelist.Length; i++)
+        {
+            IFace f = GetFaceFromEnum(facelist[i]);
             faces[i] = f;
         }
         currentFace = faces[0];
@@ -64,5 +65,45 @@ public class Dice : MonoBehaviour
         return currentFace;
     }
 
+
+    public enum enumFace
+    {
+        EmptyFace,
+        HealFace,
+        FireballFace,
+        IceFace,
+        VineFace
+    }
+
+
+    private IFace GetFaceFromEnum(enumFace face)
+    {
+        IFace f;
+        switch (face)
+        {
+            case enumFace.EmptyFace:
+                f = new EmptyFace();
+                break;
+            case enumFace.HealFace:
+                f = new HealthFace();
+                break;
+            case enumFace.FireballFace:
+                f = new FireballFace();
+                break;
+            case enumFace.IceFace:
+                f = new IceFace();
+                break;
+            case enumFace.VineFace:
+                f = new VineFace();
+                break;
+            default:
+                f = new EmptyFace();
+                Debug.Log("Could not find face of name: '" + face + "'. Made empty face instead");
+                break;
+        }
+
+
+        return f;
+    }
 
 }
