@@ -40,7 +40,6 @@ public class EnemyMovement : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(2);
         lockMove = false;
-        Destroy(gameObject);
     }
 
     void MoveToGoal()

@@ -148,7 +148,7 @@ public class PlayerControler : MonoBehaviour
             Debug.Log(context.control.name);
             if (context.control.name == "leftButton")
             {
-                IFace face = new VineFace();
+                IFace face = new GreaseFace();
                 face.Cast();
             }
             if (context.control.name == "rightButton")

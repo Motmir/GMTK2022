@@ -9,8 +9,6 @@ public class Grease : ParentBullet
     public override void OnTriggerEnter2D(Collider2D collider)
     {
         GameObject targetHit = collider.GetComponent<GameObject>();
-
-
         if (collider.GetComponent<EnemyCombat>() as EnemyCombat != null && targetsHit.IndexOf(collider.GetComponent<GameObject>()) == -1)
         {
             EnemyCombat hit = collider.GetComponent<EnemyCombat>();
