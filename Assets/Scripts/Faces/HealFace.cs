@@ -19,4 +19,9 @@ public class HealthFace : IFace
         Start();
         pComb.AddHealth(ShieldAmount);
     }
+
+    public Sprite GetSprite()
+    {
+        throw new System.NotImplementedException();
+    }
 }
