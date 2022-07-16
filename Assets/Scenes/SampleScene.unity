@@ -8311,6 +8311,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2416362756664312098, guid: c6ced517b6e7a0442b0e9302cb99120f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ecbe9557fab6e9c49b65d9b8f28064c8, type: 2}
+    - target: {fileID: 2416362756664312099, guid: c6ced517b6e7a0442b0e9302cb99120f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: ecbe9557fab6e9c49b65d9b8f28064c8, type: 2}
     - target: {fileID: 2416362756664312103, guid: c6ced517b6e7a0442b0e9302cb99120f, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -8321,11 +8329,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2416362756664312125, guid: c6ced517b6e7a0442b0e9302cb99120f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.12
+      value: -5.98
       objectReference: {fileID: 0}
     - target: {fileID: 2416362756664312125, guid: c6ced517b6e7a0442b0e9302cb99120f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.9481
+      value: 3.62
       objectReference: {fileID: 0}
     - target: {fileID: 2416362756664312125, guid: c6ced517b6e7a0442b0e9302cb99120f, type: 3}
       propertyPath: m_LocalPosition.z
