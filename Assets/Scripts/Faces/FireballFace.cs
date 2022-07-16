@@ -12,7 +12,7 @@ public class FireballFace : IFace
     Camera cam;
 
     //Values
-    float distFromPlayer = 2f;
+    float distFromPlayer = 0f;
     
     void Start()
     {

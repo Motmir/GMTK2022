@@ -8,7 +8,7 @@ public class EnemyMovement : MonoBehaviour
     GameObject player;
     LineRenderer lineRenderer;
     Rigidbody2D rb;
-    public float detectionRange, minSpeed, maxSpeed, speedLoss, timer;
+    public float detectionRange, speed, maxSpeed, speedLoss, timer;
     bool madeLine;
     Vector3 movement, distance, goal;
 
@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
         movement = goal - transform.position;
         movement.Normalize();
 
-        rb.velocity = movement * Random.RandomRange(minSpeed, maxSpeed + 1);
+        rb.velocity = movement * speed;
     }
 
     void FindPlayer()
