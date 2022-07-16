@@ -12,4 +12,4 @@ https://opengameart.org/content/dungeon-crawl-32x32-tiles-supplemental
 
 https://www.kenney.nl/assets/playing-cards-pack
 
-- Spillkort
+- Spillkort og litt terninger
