@@ -19,4 +19,9 @@ public class IceFace : IFace
         Start();
         pComb.AddShield(ShieldAmount);
     }
+
+    public Sprite GetSprite()
+    {
+        throw new System.NotImplementedException();
+    }
 }
