@@ -2,6 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IEffect{
-    void Cast();
+public interface IFace{
+    public void Cast();
 }
