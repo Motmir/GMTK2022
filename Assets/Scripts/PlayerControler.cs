@@ -136,13 +136,13 @@ public class PlayerControler : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        if (!UIManager.paused) return;
+        if (UIManager.paused) return;
         moveVector = context.ReadValue<Vector2>();    
     }
 
     public void UseEffect(InputAction.CallbackContext context)
     {
-        if (!UIManager.paused) return;
+        if (UIManager.paused) return;
         if (context.started)
         {
             Debug.Log(context.control.name);
