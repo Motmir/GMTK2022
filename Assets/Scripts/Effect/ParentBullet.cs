@@ -4,9 +4,11 @@ using UnityEngine;
 
 public abstract class ParentBullet: MonoBehaviour
 {
-    [System.NonSerialized] protected Rigidbody2D rb;
-    [System.NonSerialized] protected float speed = 15;
-    [System.NonSerialized] protected int damage;
+    protected Rigidbody2D rb;
+    protected float speed = 15;
+    protected int damage;
+    protected int slow;
+    protected int slowTime;
 
     public abstract void Setup(Vector3 Dir);
 

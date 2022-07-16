@@ -17,16 +17,18 @@ public class EnemyCombat : ParentEnemyCombat
     }
 
 
-    override public void Slow(int amount)
+    override public void Slow(int amount, int time)
     {
-        StartCoroutine(waiter());
-        IEnumerator waiter()
-        {
-            this.GetComponent<EnemyMovement>().speed = (this.GetComponent<EnemyMovement>().maxSpeed - amount);
+        StartCoroutine(waiter(amount, time));
+    }
+    IEnumerator waiter(int amount, int time)
+    {
+        Debug.Log("Speed: " + this.GetComponent<EnemyMovement>().speed);
+        Debug.Log("Time: " + time);
+        this.GetComponent<EnemyMovement>().speed = (this.GetComponent<EnemyMovement>().maxSpeed - amount);
+        Debug.Log("NewSpeed: " + this.GetComponent<EnemyMovement>().speed);
+        yield return new WaitForSecondsRealtime(time);
 
-            yield return new WaitForSecondsRealtime(3);
-
-            this.GetComponent<EnemyMovement>().speed = this.GetComponent<EnemyMovement>().maxSpeed;
-        }
+        this.GetComponent<EnemyMovement>().speed = this.GetComponent<EnemyMovement>().maxSpeed;
     }
 }
