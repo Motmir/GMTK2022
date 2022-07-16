@@ -11,6 +11,11 @@ public class TestCast : MonoBehaviour
         {
             if (context.control.name == "leftButton")
             {
+                IFace face = new VineFace();
+                face.Cast();
+            }
+            if (context.control.name == "rightButton")
+            {
                 IFace face = new FireballFace();
                 face.Cast();
             }
