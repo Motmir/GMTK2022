@@ -13,7 +13,7 @@ public class IceFace : IFace
     {
         player = GameObject.Find("Player");
         pComb = player.transform.GetComponent<PlayerCombat>();
-        icon = (Sprite)Resources.Load("UtilityFaces/Ice");
+        icon = (Sprite)Resources.Load("DefenceFaces/Ice");
     }
 
     public void Cast()

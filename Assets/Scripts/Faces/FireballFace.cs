@@ -10,6 +10,7 @@ public class FireballFace : IFace
     Rigidbody2D rb;
     Vector3 mouse;
     Camera cam;
+    Sprite icon;
 
     //Values
     float distFromPlayer = 0f;
@@ -22,6 +23,7 @@ public class FireballFace : IFace
         rb = player.GetComponent<Rigidbody2D>();
         cam = player.GetComponentInChildren<Camera>();
         mouse = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
+        icon = (Sprite)Resources.Load("AttackFaces/Ice");
     }
 
     public void Cast()
@@ -40,6 +42,6 @@ public class FireballFace : IFace
 
     public Sprite GetSprite()
     {
-        throw new System.NotImplementedException();
+        return icon;
     }
 }

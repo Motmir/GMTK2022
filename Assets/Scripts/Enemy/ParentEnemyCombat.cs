@@ -9,4 +9,6 @@ abstract public class ParentEnemyCombat : MonoBehaviour
 
     abstract public void Damage(int amount);
     abstract public void Slow(int amount, int time);
+
+    abstract public void Slide(int time);
 }

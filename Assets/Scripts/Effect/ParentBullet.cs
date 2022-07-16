@@ -8,7 +8,7 @@ public abstract class ParentBullet: MonoBehaviour
     protected float speed = 15;
     protected int damage;
     protected int slow;
-    protected int slowTime;
+    protected int duration;
 
     public abstract void Setup(Vector3 Dir);
 

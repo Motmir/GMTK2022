@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour
     LineRenderer lineRenderer;
     Rigidbody2D rb;
     public float detectionRange, speed, maxSpeed, speedLoss, timer;
-    bool madeLine;
+    bool madeLine, lockMove;
     Vector3 movement, distance, goal;
 
     public void OnTriggerEnter(Collider collider)
@@ -30,12 +30,28 @@ public class EnemyMovement : MonoBehaviour
         FindPlayer();
     }
 
+    public void Slide(int time)
+    {
+        lockMove = true;
+        StartCoroutine(waiter());
+    }
+
+    IEnumerator waiter()
+    {
+        yield return new WaitForSecondsRealtime(2);
+        lockMove = false;
+        Destroy(gameObject);
+    }
+
     void MoveToGoal()
     {
         movement = goal - transform.position;
         movement.Normalize();
 
-        rb.velocity = movement * speed;
+        if (!lockMove)
+        {
+            rb.velocity = movement * speed;
+        }
     }
 
     void FindPlayer()

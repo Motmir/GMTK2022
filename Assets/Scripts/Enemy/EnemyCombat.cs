@@ -18,11 +18,17 @@ public class EnemyCombat : ParentEnemyCombat
         }
     }
 
+    public override void Slide(int time)
+    {
+        EnemyMovement enmMove = transform.GetComponent<EnemyMovement>();
+        enmMove.Slide(time);
+    }
 
     override public void Slow(int amount, int time)
     {
         StartCoroutine(waiter(amount, time));
     }
+
     IEnumerator waiter(int amount, int time)
     {
         Debug.Log("Speed: " + this.GetComponent<EnemyMovement>().speed);
@@ -33,4 +39,6 @@ public class EnemyCombat : ParentEnemyCombat
 
         this.GetComponent<EnemyMovement>().speed = this.GetComponent<EnemyMovement>().maxSpeed;
     }
+
+
 }

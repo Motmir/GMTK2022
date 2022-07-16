@@ -14,10 +14,8 @@ public class Vines : ParentBullet
         if (collider.GetComponent<EnemyCombat>() as EnemyCombat != null && targetsHit.IndexOf(collider.GetComponent<GameObject>()) == -1)
         {
             EnemyCombat hit = collider.GetComponent<EnemyCombat>();
-            Debug.Log(targetsHit);
             targetsHit.Add(targetHit);
-            Debug.Log(targetsHit);
-            hit.Slow(slow, slowTime);
+            hit.Slow(slow, duration);
         }
     }
 
@@ -25,7 +23,7 @@ public class Vines : ParentBullet
     {
         damage = 0;
         slow = 3;
-        slowTime = 3;
+        duration = 3;
         StartCoroutine(waiter());
     }
 
