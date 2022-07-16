@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement : MonoBehaviour
+public class PlayerControler : MonoBehaviour
 {
     //Values
     private Rigidbody2D rigidbody2d;
@@ -136,5 +136,27 @@ public class Movement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        moveVector = context.ReadValue<Vector2>();    }
+        if (UIManager.paused) return;
+        moveVector = context.ReadValue<Vector2>();    
+    }
+
+    public void UseEffect(InputAction.CallbackContext context)
+    {
+        if (UIManager.paused) return;
+        if (context.started)
+        {
+            Debug.Log(context.control.name);
+            if (context.control.name == "leftButton")
+            {
+                IFace face = new VineFace();
+                face.Cast();
+            }
+            if (context.control.name == "rightButton")
+            {
+                IFace face = new FireballFace();
+                face.Cast();
+            }
+        }
+    }
+
 }
