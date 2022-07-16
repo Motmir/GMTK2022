@@ -4,9 +4,24 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    private Dice activeAttack = null;
-    private Dice activeDefence = null;
-    private Dice activeUtility = null;
+    public static InventoryManager instace = null;
+
+    private void Awake()
+    {
+        if (instace == null)
+        {
+            instace = this;
+        }
+        else
+        {
+            DestroyImmediate(transform.gameObject);
+        }
+    }
+
+
+    public Dice activeAttack = null;
+    public Dice activeDefence = null;
+    public Dice activeUtility = null;
 
 
 

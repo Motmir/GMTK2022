@@ -10,6 +10,10 @@ public class UIManager : MonoBehaviour
     public static bool paused = false;
     public GameObject pauseMenu = null;
 
+    public SpriteRenderer offenceDie = null;
+    public SpriteRenderer defenceDie = null;
+    public SpriteRenderer utilityDie = null;
+
     private void Awake()
     {
         if (instace == null)
@@ -19,7 +23,6 @@ public class UIManager : MonoBehaviour
         {
             DestroyImmediate(transform.gameObject);
         }
-        InputManager.instace.GetComponent<PlayerInput>().actions.Enable();
     }
 
     public void TogglePause()
@@ -36,4 +39,14 @@ public class UIManager : MonoBehaviour
             paused = false;
         }
     }
+
+    private void Update()
+    {
+        offenceDie.sprite = InventoryManager.instace.activeAttack.getFace().GetSprite();
+        defenceDie.sprite = InventoryManager.instace.activeDefence.getFace().GetSprite();
+        utilityDie.sprite = InventoryManager.instace.activeUtility.getFace().GetSprite();
+    }
+
+
+
 }
