@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Fireball : ParentBullet
 {
-
     public override void OnTriggerEnter2D(Collider2D collider)
     {
-        /*SquareEnemy enemy = collider.GetComponent<SquareEnemy>();
-        if (enemy != null)
+        Debug.Log(collider.GetComponent<EnemyCombat>() as EnemyCombat != null);
+        if (collider.GetComponent<EnemyCombat>() as EnemyCombat != null)
         {
-            enemy.Damage();
-        }*/
+            collider.GetComponent<EnemyCombat>().Damage(damage);
+        }
+        Destroy(gameObject);
     }
 
     public override void Setup(Vector3 Dir)
     {
+        damage = 2;
         rb = transform.GetComponent<Rigidbody2D>();
 
         float rotation = Mathf.Rad2Deg * Mathf.Atan2(Dir.y, Dir.x);

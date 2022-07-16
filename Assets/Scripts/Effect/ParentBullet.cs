@@ -6,6 +6,7 @@ public abstract class ParentBullet: MonoBehaviour
 {
     [System.NonSerialized] protected Rigidbody2D rb;
     [System.NonSerialized] protected float speed = 15;
+    [System.NonSerialized] protected int damage;
 
     public abstract void Setup(Vector3 Dir);
 

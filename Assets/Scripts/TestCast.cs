@@ -7,7 +7,6 @@ public class TestCast : MonoBehaviour
 {
     public void UseEffect(InputAction.CallbackContext context)
     {
-        Debug.Log(context);
         if (context.started)
         {
             if (context.control.name == "leftButton")

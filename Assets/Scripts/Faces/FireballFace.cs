@@ -17,7 +17,7 @@ public class FireballFace : IFace
     void Start()
     {
         player = GameObject.Find("Player");
-        pfBullet = (GameObject)Resources.Load("Fireball_0");
+        pfBullet = (GameObject)Resources.Load("Fireball");
         trans = player.GetComponent<Transform>();
         rb = player.GetComponent<Rigidbody2D>();
         cam = player.GetComponentInChildren<Camera>();
