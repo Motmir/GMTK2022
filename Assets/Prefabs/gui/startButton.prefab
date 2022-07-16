@@ -138,6 +138,9 @@ MonoBehaviour:
   img: {fileID: 7693892881831660805}
   defaultB: {fileID: -638395113, guid: d7b5696818bd9aa47bea6026fd4ccd76, type: 3}
   pressed: {fileID: 697842042, guid: d7b5696818bd9aa47bea6026fd4ccd76, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &2162936513947412149
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,8 +209,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 478f806e6c33ddf4f980bf1b88c51de0, type: 2}
+  m_sharedMaterial: {fileID: -3414149397031055326, guid: 478f806e6c33ddf4f980bf1b88c51de0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
