@@ -513,7 +513,60 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1280711200871361010, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
       propertyPath: m_text
+      value: "Offensive abillity = left click\tDefensive abillity = right click\tUtlity
+        abillity = space\n\nAbillities Reroll on use\nFind Exit TO progres\n\n\nCredits\n\t\tAuburnGhost\t\t\tMotmir\n\t\tLiz\t\t\t\tHanna\n\t\tEmma\t\t\t\tAllenskiiiiiiiiiii\n\t\tIda\n\n\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711200871361010, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontSize
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711200871361010, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontAsset
       value: 
+      objectReference: {fileID: 11400000, guid: da66b65ee2a398a44bc4a7f6652f5d49, type: 2}
+    - target: {fileID: 1280711200871361010, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711200871361010, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3322008109327800762, guid: da66b65ee2a398a44bc4a7f6652f5d49, type: 2}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5c605a4d8b137b441a9e6334ce2c06b7, type: 2}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2010867192881534991, guid: 5c605a4d8b137b441a9e6334ce2c06b7, type: 2}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711201573762503, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_enableVertexGradient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711201651703485, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711201728802075, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2601362220573989008, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
       propertyPath: source
