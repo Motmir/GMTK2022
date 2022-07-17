@@ -11,7 +11,7 @@ public class VineFace : IFace
     Sprite icon;
 
     // Start is called before the first frame update
-    void Start()
+    public void Init()
     {
         player = GameObject.Find("Player");
         pfBullet = (GameObject)Resources.Load("Vines");
@@ -22,8 +22,6 @@ public class VineFace : IFace
 
     public void Cast()
     {
-        Start();
-
         Vector3 spellSpawn = new(mouse.x, mouse.y, 0);
 
         GameObject bulletTransform = GameObject.Instantiate(pfBullet, spellSpawn, Quaternion.identity);

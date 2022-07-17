@@ -149,11 +149,13 @@ public class PlayerControler : MonoBehaviour
             if (context.control.name == "leftButton")
             {
                 IFace face = new GreaseFace();
+                face.Init();
                 face.Cast();
             }
             if (context.control.name == "rightButton")
             {
                 IFace face = new FireballFace();
+                face.Init();
                 face.Cast();
             }
         }

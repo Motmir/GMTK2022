@@ -14,8 +14,8 @@ public class FireballFace : IFace
 
     //Values
     float distFromPlayer = 0f;
-    
-    void Start()
+
+    public void Init()
     {
         player = GameObject.Find("Player");
         pfBullet = (GameObject)Resources.Load("Fireball");
@@ -23,12 +23,11 @@ public class FireballFace : IFace
         rb = player.GetComponent<Rigidbody2D>();
         cam = player.GetComponentInChildren<Camera>();
         mouse = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-        icon = (Sprite)Resources.Load("AttackFaces/Ice");
+        icon = (Sprite)Resources.Load("AttackFaces/Fireball");
     }
 
     public void Cast()
     {
-        Start();
         Vector3 spellSpawn = new(trans.position.x, trans.position.y, 0);
         mouse.z = 0;
         mouse -= spellSpawn;
