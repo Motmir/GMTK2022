@@ -43,6 +43,9 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        InventoryManager.instace.activeAttack.Update();
+        InventoryManager.instace.activeDefence.Update();
+        InventoryManager.instace.activeUtility.Update();
         offenceDie.sprite = InventoryManager.instace.activeAttack.getFace().GetSprite();
         defenceDie.sprite = InventoryManager.instace.activeDefence.getFace().GetSprite();
         utilityDie.sprite = InventoryManager.instace.activeUtility.getFace().GetSprite();

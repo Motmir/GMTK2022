@@ -152,18 +152,21 @@ public class PlayerControler : MonoBehaviour
                 if (InventoryManager.instace.activeAttack.IsRolling()) return;
                 InventoryManager.instace.activeAttack.getFace().Cast();
                 InventoryManager.instace.activeAttack.Roll();
+                Debug.Log("attack");
             }
             if (context.control.name == "rightButton")
             {
                 if (InventoryManager.instace.activeDefence.IsRolling()) return;
                 InventoryManager.instace.activeDefence.getFace().Cast();
                 InventoryManager.instace.activeDefence.Roll();
+                Debug.Log("defend");
             }
             if (context.control.name == "space")
             {
                 if (InventoryManager.instace.activeUtility.IsRolling()) return;
                 InventoryManager.instace.activeUtility.getFace().Cast();
                 InventoryManager.instace.activeUtility.Roll();
+                Debug.Log("util");
             }
         }
     }

@@ -15,10 +15,11 @@ public class GameManager : MonoBehaviour
         {
             instace = this;
             SceneManager.sceneLoaded += OnSceneLoaded;
+            DontDestroyOnLoad(gameObject);
         }
         else
         {
-            DestroyImmediate(transform.gameObject);
+            DestroyImmediate(gameObject);
         }
 
     }
@@ -70,10 +71,11 @@ public class GameManager : MonoBehaviour
                 InventoryManager.instace.activeDefence = new Dice(new Dice.enumFace[] { Dice.enumFace.IceFace, Dice.enumFace.EmptyFace });
                 InventoryManager.instace.activeUtility = new Dice(new Dice.enumFace[] { Dice.enumFace.VineFace, Dice.enumFace.HealFace });
                 break;
+            case "mainMenu":
+                DestroyImmediate(gameObject);
+                break;
             default:
-                InventoryManager.instace.activeAttack = new Dice(new Dice.enumFace[] { Dice.enumFace.FireballFace, Dice.enumFace.EmptyFace });
-                InventoryManager.instace.activeDefence = new Dice(new Dice.enumFace[] { Dice.enumFace.IceFace, Dice.enumFace.EmptyFace });
-                InventoryManager.instace.activeUtility = new Dice(new Dice.enumFace[] { Dice.enumFace.VineFace, Dice.enumFace.HealFace });
+                Debug.LogError("scene is not spessefied in switchcase for GameManager");
                 break;
         }
 

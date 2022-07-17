@@ -2535,6 +2535,7 @@ GameObject:
   - component: {fileID: 4011190930178363594}
   - component: {fileID: 639667103904885168}
   - component: {fileID: 7344834579088641749}
+  - component: {fileID: 7167948445686735162}
   m_Layer: 5
   m_Name: lvl (1)
   m_TagString: Untagged
@@ -2657,6 +2658,24 @@ MonoBehaviour:
           m_StringArgument: Floor1
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7167948445686735162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2766537656327398549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &2907647106926207714
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,6 +2688,7 @@ GameObject:
   - component: {fileID: 5386189310971641187}
   - component: {fileID: 1605537788149371631}
   - component: {fileID: 1630508668563574316}
+  - component: {fileID: 2959492595063081078}
   m_Layer: 5
   m_Name: lvl (6)
   m_TagString: Untagged
@@ -2791,6 +2811,24 @@ MonoBehaviour:
           m_StringArgument: Floor6
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2959492595063081078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2907647106926207714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &3144207211095473569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,6 +2976,7 @@ GameObject:
   - component: {fileID: 3684142562605148882}
   - component: {fileID: 8833629953988771633}
   - component: {fileID: 5401844662541691439}
+  - component: {fileID: 2520663556012044155}
   m_Layer: 5
   m_Name: lvl (2)
   m_TagString: Untagged
@@ -3060,6 +3099,24 @@ MonoBehaviour:
           m_StringArgument: Floor2
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2520663556012044155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3261020261876635738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &3333566985076674947
 GameObject:
   m_ObjectHideFlags: 0
@@ -3072,6 +3129,7 @@ GameObject:
   - component: {fileID: 7555622346369075695}
   - component: {fileID: 124461440534800884}
   - component: {fileID: 8113533131295259368}
+  - component: {fileID: 2008978439142872297}
   m_Layer: 5
   m_Name: lvl (4)
   m_TagString: Untagged
@@ -3194,6 +3252,24 @@ MonoBehaviour:
           m_StringArgument: Floor4
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2008978439142872297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3333566985076674947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &3667753158417907680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,6 +3282,7 @@ GameObject:
   - component: {fileID: 727132307522853798}
   - component: {fileID: 541098461330074117}
   - component: {fileID: 4100027657363211519}
+  - component: {fileID: 9058934059112021834}
   m_Layer: 5
   m_Name: lvl (3)
   m_TagString: Untagged
@@ -3328,6 +3405,24 @@ MonoBehaviour:
           m_StringArgument: Floor3
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &9058934059112021834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3667753158417907680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &3727690618671329817
 GameObject:
   m_ObjectHideFlags: 0
@@ -3460,7 +3555,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: sampleScene
+          m_StringArgument: Floor1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &34297776043214057
@@ -3493,6 +3588,7 @@ GameObject:
   - component: {fileID: 8036972163623378769}
   - component: {fileID: 2249320294039192118}
   - component: {fileID: 9194850025940836372}
+  - component: {fileID: 706558943303319104}
   m_Layer: 5
   m_Name: lvl (7)
   m_TagString: Untagged
@@ -3615,6 +3711,24 @@ MonoBehaviour:
           m_StringArgument: Floor7
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &706558943303319104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3878269484690958361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &3983416277127365454
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,6 +3741,7 @@ GameObject:
   - component: {fileID: 7047218628054981253}
   - component: {fileID: 7468153878387659394}
   - component: {fileID: 7929602418715351957}
+  - component: {fileID: 1764843745210767227}
   m_Layer: 5
   m_Name: lvl (5)
   m_TagString: Untagged
@@ -3749,6 +3864,24 @@ MonoBehaviour:
           m_StringArgument: Floor5
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1764843745210767227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3983416277127365454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2665833c8dfb9439b0a35634ced7ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 6872508767681123857}
+  defaultB: {fileID: 21300000, guid: 93f3419e386c06140bb4cfc5da9e90d8, type: 3}
+  pressed: {fileID: 21300000, guid: a8cbda359dadd974ea3d661a3971b6c7, type: 3}
+  compressClip: {fileID: 8300000, guid: 9c9e9450fba764940b174ceff13b5e0d, type: 3}
+  uncompressClip: {fileID: 8300000, guid: 1867aa52662aa76489d9baedc19b29b2, type: 3}
+  source: {fileID: 0}
 --- !u!1 &4404306463295145337
 GameObject:
   m_ObjectHideFlags: 0
