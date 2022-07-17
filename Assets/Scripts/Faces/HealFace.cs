@@ -9,7 +9,7 @@ public class HealthFace : IFace
     public int ShieldAmount;
     Sprite icon;
 
-    void Start()
+    public void Init()
     {
         player = GameObject.Find("Player");
         pComb = player.transform.GetComponent<PlayerCombat>();
@@ -18,7 +18,6 @@ public class HealthFace : IFace
 
     public void Cast()
     {
-        Start();
         pComb.AddHealth(ShieldAmount);
     }
 
