@@ -101,7 +101,7 @@ public class Dice
                 Debug.Log("Could not find face of name: '" + face + "'. Made empty face instead");
                 break;
         }
-
+        f.Init();
 
         return f;
     }

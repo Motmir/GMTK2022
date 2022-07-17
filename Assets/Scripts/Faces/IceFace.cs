@@ -9,7 +9,7 @@ public class IceFace : IFace
     public int ShieldAmount;
     Sprite icon;
 
-    void Start()
+    public void Init()
     {
         player = GameObject.Find("Player");
         pComb = player.transform.GetComponent<PlayerCombat>();
@@ -18,7 +18,6 @@ public class IceFace : IFace
 
     public void Cast()
     {
-        Start();
         pComb.AddShield(ShieldAmount);
     }
 

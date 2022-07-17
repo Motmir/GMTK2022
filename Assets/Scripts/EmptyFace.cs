@@ -5,6 +5,10 @@ using UnityEngine;
 public class EmptyFace : IFace
 {
 
+    public void Init ()
+    {
+
+    }
     Sprite icon = Resources.Load<Sprite>("ShittyPlaceHolderIcon");
 
     public void Cast()

@@ -23,6 +23,7 @@ public class UIManager : MonoBehaviour
         {
             DestroyImmediate(transform.gameObject);
         }
+
     }
 
     public void TogglePause()
