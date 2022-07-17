@@ -65,7 +65,7 @@ public class PlayerControler : MonoBehaviour
         }
 
 
-        GoodGuyanim.SetBool("RunSide", true); //goodguy movement animations
+        GoodGuyanim.SetBool("WalkSide", true); //goodguy movement animations
         if (Mathf.Abs(moveVector.x) > Mathf.Abs(moveVector.y))
         {
             GoodGuyanim.SetBool("WalkSide", true);
@@ -85,13 +85,9 @@ public class PlayerControler : MonoBehaviour
             GoodGuyanim.SetBool("WalkDown", true);
         }
 
-
-
-        if (moveVector.y)
-
         int curX;
         int curY;
-
+        
         if (currMove.x >= 0) //Check if move right or left
         {
             curX = 1;
