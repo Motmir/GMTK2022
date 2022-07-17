@@ -7,7 +7,7 @@ public class PlayerControler : MonoBehaviour
 {
     //Values
     public Rigidbody2D rigidbody2d;
-    private BoxCollider2D boxCollider2d;
+    public PlayerCombat pCombat;
     private Vector2 moveVector;
     private Vector3 currMove;
     
@@ -34,7 +34,7 @@ public class PlayerControler : MonoBehaviour
         GameObject player = GameObject.Find("Player");
 
         rigidbody2d = player.GetComponent<Rigidbody2D>();
-        boxCollider2d = player.GetComponent<BoxCollider2D>();
+        pCombat = player.GetComponent<PlayerCombat>();
     }
 
     // Update is called once per frame
