@@ -52,7 +52,10 @@ public class Dice
         }
     }
 
-    
+    public bool IsRolling()
+    {
+        return rolling;
+    }
 
     public void Roll()
     {

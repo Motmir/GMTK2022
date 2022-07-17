@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerControler : MonoBehaviour
 {
     //Values
-    private Rigidbody2D rigidbody2d;
+    public Rigidbody2D rigidbody2d;
     private BoxCollider2D boxCollider2d;
     private Vector2 moveVector;
     private Vector3 currMove;
@@ -29,10 +29,12 @@ public class PlayerControler : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void Rebind()
     {
-        rigidbody2d = transform.GetComponent<Rigidbody2D>();
-        boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        GameObject player = GameObject.Find("Player");
+
+        rigidbody2d = player.GetComponent<Rigidbody2D>();
+        boxCollider2d = player.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -140,25 +142,29 @@ public class PlayerControler : MonoBehaviour
         moveVector = context.ReadValue<Vector2>();    
     }
 
-    public void UseEffect(InputAction.CallbackContext context)
+    public void UseAbillety(InputAction.CallbackContext context)
     {
         if (UIManager.paused) return;
         if (context.started)
         {
-            Debug.Log(context.control.name);
             if (context.control.name == "leftButton")
             {
-                IFace face = new GreaseFace();
-                face.Init();
-                face.Cast();
+                if (InventoryManager.instace.activeAttack.IsRolling()) return;
+                InventoryManager.instace.activeAttack.getFace().Cast();
+                InventoryManager.instace.activeAttack.Roll();
             }
             if (context.control.name == "rightButton")
             {
-                IFace face = new FireballFace();
-                face.Init();
-                face.Cast();
+                if (InventoryManager.instace.activeDefence.IsRolling()) return;
+                InventoryManager.instace.activeDefence.getFace().Cast();
+                InventoryManager.instace.activeDefence.Roll();
+            }
+            if (context.control.name == "space")
+            {
+                if (InventoryManager.instace.activeUtility.IsRolling()) return;
+                InventoryManager.instace.activeUtility.getFace().Cast();
+                InventoryManager.instace.activeUtility.Roll();
             }
         }
     }
-
 }

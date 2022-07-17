@@ -444,6 +444,7 @@ GameObject:
   - component: {fileID: 300508871111752592}
   - component: {fileID: 5756200947103380156}
   - component: {fileID: 6617942523754099704}
+  - component: {fileID: 7233730885586767567}
   m_Layer: 0
   m_Name: MUSTHAVE
   m_TagString: Untagged
@@ -508,8 +509,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+      - m_Target: {fileID: 7233730885586767567}
+        m_TargetAssemblyTypeName: PlayerControler, Assembly-CSharp
         m_MethodName: Move
         m_Mode: 0
         m_Arguments:
@@ -522,14 +523,6 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 57d48c55-d577-431b-a0e5-79d959538cb2
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 9d61798c-cc1e-483d-b2a0-b4512196a8d6
-    m_ActionName: Player/Look[/Mouse/delta]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 45df3784-3829-4936-8ae6-15738b89e856
-    m_ActionName: Player/Fire[/Mouse/leftButton]
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 6c7cc3c2-a8b7-42f9-8263-cbdfbad390b6
@@ -572,9 +565,9 @@ MonoBehaviour:
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7233730885586767567}
         m_TargetAssemblyTypeName: PlayerControler, Assembly-CSharp
-        m_MethodName: UseEffect
+        m_MethodName: UseAbillety
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -588,7 +581,7 @@ MonoBehaviour:
     m_ActionName: Player/Cast[/Mouse/leftButton,/Mouse/rightButton,/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1992493389221769849}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: TogglePause
         m_Mode: 1
@@ -655,16 +648,16 @@ MonoBehaviour:
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: c4062649b6fe40647bbed0f882038756, type: 3}
-  m_PointAction: {fileID: 0}
-  m_MoveAction: {fileID: 0}
-  m_SubmitAction: {fileID: 0}
-  m_CancelAction: {fileID: 0}
-  m_LeftClickAction: {fileID: 0}
-  m_MiddleClickAction: {fileID: 0}
-  m_RightClickAction: {fileID: 0}
-  m_ScrollWheelAction: {fileID: 0}
-  m_TrackedDevicePositionAction: {fileID: 0}
-  m_TrackedDeviceOrientationAction: {fileID: 0}
+  m_PointAction: {fileID: -662462058708362482, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_MoveAction: {fileID: -5688225934555138047, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_SubmitAction: {fileID: 2064916234097673511, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_CancelAction: {fileID: -1967631576421560919, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_LeftClickAction: {fileID: -662462058708362482, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_MiddleClickAction: {fileID: -7832861558301245316, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_RightClickAction: {fileID: -2399947475025069860, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_ScrollWheelAction: {fileID: 4485086735734406437, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 1942461873996123534, guid: c4062649b6fe40647bbed0f882038756, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 1025543830046995696, guid: c4062649b6fe40647bbed0f882038756, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
 --- !u!114 &6617942523754099704
@@ -679,6 +672,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1733a03f068efc44e854121f7e25c986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 7233730885586767567}
+--- !u!114 &7233730885586767567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672386842224597156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebf80ac8ed5d214abf02f9adda29617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidbody2d: {fileID: 0}
+  speed: 2
+  maxSpeed: 9.25
+  speedLoss: 2
+  speedCutoff: 3
+  turnModifier: 6
 --- !u!1 &2342818421726098861
 GameObject:
   m_ObjectHideFlags: 0

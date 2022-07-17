@@ -18,12 +18,8 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-
     public Dice activeAttack = null;
     public Dice activeDefence = null;
     public Dice activeUtility = null;
-
-
-
 
 }
