@@ -36,7 +36,7 @@ public class FireballFace : IFace
         spellSpawn += dist;
 
         GameObject bulletTransform = GameObject.Instantiate(pfBullet, spellSpawn, Quaternion.identity);
-        bulletTransform.GetComponent<Fireball>().Setup(mouse);
+        bulletTransform.GetComponent<Fireball>().Setup(mouse, 0);
     }
 
     public Sprite GetSprite()

@@ -17,7 +17,7 @@ public class Grease : ParentBullet
         }
     }
 
-    public override void Setup(Vector3 Dir)
+    public override void Setup(Vector3 Dir, int id)
     {
         damage = 0;
         duration = 2;

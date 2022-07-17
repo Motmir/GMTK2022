@@ -25,7 +25,7 @@ public class GreaseFace : IFace
         Vector3 spellSpawn = new(mouse.x, mouse.y, 0);
 
         GameObject bulletTransform = GameObject.Instantiate(pfBullet, spellSpawn, Quaternion.identity);
-        bulletTransform.GetComponent<Grease>().Setup(mouse);
+        bulletTransform.GetComponent<Grease>().Setup(mouse, 0);
     }
 
     public Sprite GetSprite()

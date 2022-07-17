@@ -10,7 +10,7 @@ public abstract class ParentBullet: MonoBehaviour
     protected int slow;
     protected int duration;
 
-    public abstract void Setup(Vector3 Dir);
+    public abstract void Setup(Vector3 Dir, int id);
 
     public abstract void OnTriggerEnter2D(Collider2D collider);
 }

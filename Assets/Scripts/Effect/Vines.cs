@@ -19,7 +19,7 @@ public class Vines : ParentBullet
         }
     }
 
-    public override void Setup(Vector3 Dir)
+    public override void Setup(Vector3 Dir, int id)
     {
         damage = 0;
         slow = 3;
