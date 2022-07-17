@@ -5,8 +5,9 @@ using UnityEngine;
 public interface IFace
 {
 
-    void Init();
-    void Cast();
+    abstract void Init();
+
+    abstract void Cast();
 
     Sprite GetSprite();
 

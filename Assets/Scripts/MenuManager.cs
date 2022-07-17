@@ -7,14 +7,22 @@ public class MenuManager : MonoBehaviour
 {
     public GameObject MainMenu = null;
     public GameObject InfoMenu = null;
-      public void LoadScene(string sceneName) {
+    public GameObject LevelSelect = null;
+
+    public void LoadScene(string sceneName) {
         SceneManager.LoadScene(sceneName);
-    }
+       }
 
     public void InfoMenuToggle()
     {
         MainMenu.active = !MainMenu.active;
         InfoMenu.active = !InfoMenu.active;
+    }
+
+    public void LevelSelectToggle()
+    {
+        MainMenu.active = !MainMenu.active;
+        LevelSelect.active = !LevelSelect.active;
     }
 
     public void quitTheGame() {
