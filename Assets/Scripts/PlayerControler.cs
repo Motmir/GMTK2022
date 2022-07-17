@@ -170,4 +170,15 @@ public class PlayerControler : MonoBehaviour
             }
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        GameObject targetHit = collider.GetComponent<GameObject>();
+
+
+        if (targetHit.GetComponent<Transport>() as Transport != null)
+        {
+            targetHit.GetComponent<Transport>().LoadNextScene();
+        }
+    }
 }
