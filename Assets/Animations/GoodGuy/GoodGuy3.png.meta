@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9070dd000b675f94badd39c38dfdf9fe
+guid: d112de265aed9c14ca7a90a746d8a804
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,12 +104,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoodGuyimproved_0
+      name: GoodGuy3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 110
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -118,19 +118,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7aa159bd13d57364596c2ac408b83b5f
-      internalID: 1569234667
+      spriteID: 097928dba2f70be4ab13664c6c1aea7d
+      internalID: -862763986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_1
+      name: GoodGuy3_1
       rect:
         serializedVersion: 2
-        x: 14
+        x: 15
         y: 110
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -139,19 +139,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6700eaac4177ee4fae4e5e37846a962
-      internalID: -2053079646
+      spriteID: 057de789a9d6e1942bbef38461b9218f
+      internalID: -673006362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_2
+      name: GoodGuy3_2
       rect:
         serializedVersion: 2
-        x: 28
+        x: 30
         y: 110
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -160,19 +160,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 835555fbb00e6d441a3fa0fcd41ab261
-      internalID: 391308499
+      spriteID: 47129a3919a8227498339b637b46683f
+      internalID: -1604767697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_3
+      name: GoodGuy3_3
       rect:
         serializedVersion: 2
-        x: 42
+        x: 45
         y: 110
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,19 +181,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2ad07ae0114a2439fbc98f83d11c95
-      internalID: -1402098112
+      spriteID: 3295d443c321c5c448f2d59effd6e9d6
+      internalID: 1815661184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_4
+      name: GoodGuy3_4
       rect:
         serializedVersion: 2
         x: 0
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -202,19 +202,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a5ad2961ff446248a6a50c6788a01a0
-      internalID: -1551277508
+      spriteID: c376719af0c53e6479bbaad76966ee0e
+      internalID: 1889785830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_5
+      name: GoodGuy3_5
       rect:
         serializedVersion: 2
-        x: 14
+        x: 15
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -223,19 +223,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd9ed815aa137694ba84750b914d4aeb
-      internalID: -343140917
+      spriteID: 76fd4e7bc94574141a4a5933b6f9a417
+      internalID: -569108615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_6
+      name: GoodGuy3_6
       rect:
         serializedVersion: 2
-        x: 28
+        x: 30
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -244,19 +244,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdea001bbe7f3fb4caa75aa063e52d89
-      internalID: -955594594
+      spriteID: 690068f6409ff3b4b83e79ca51055c72
+      internalID: -565362160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_7
+      name: GoodGuy3_7
       rect:
         serializedVersion: 2
-        x: 42
+        x: 45
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -265,19 +265,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d5014f09f59e0e418f7ca4b77415003
-      internalID: 74649212
+      spriteID: 1e158a9237e14504da636d4de3f4be63
+      internalID: -892463087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_8
+      name: GoodGuy3_8
       rect:
         serializedVersion: 2
-        x: 56
+        x: 60
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -286,19 +286,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b8f656a372db4d4d9d3fbd9f9070b45
-      internalID: -1910271382
+      spriteID: be3d033bad3fd594c945ec976f9ccaa7
+      internalID: -1854121921
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_9
+      name: GoodGuy3_9
       rect:
         serializedVersion: 2
-        x: 70
+        x: 75
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -307,19 +307,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8f4c9c55eee122409703fca98edf9d3
-      internalID: -2074928730
+      spriteID: ad73de6dec1c08f45a2cfd7751cb9474
+      internalID: 930252640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_10
+      name: GoodGuy3_10
       rect:
         serializedVersion: 2
-        x: 84
+        x: 90
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -328,19 +328,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b626da7b8f1dd04ca644fd5803cc115
-      internalID: 2119944910
+      spriteID: c0df1001c6440a04b96e4f64892fa019
+      internalID: -597920585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoodGuyimproved_11
+      name: GoodGuy3_11
       rect:
         serializedVersion: 2
-        x: 98
+        x: 105
         y: 92
-        width: 14
+        width: 15
         height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -349,8 +349,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f29b34f0d1ad8ac40b3682b1b5d20eeb
-      internalID: 369474821
+      spriteID: 4afaeb39a22b734458ef1e38e4ca1c98
+      internalID: -1720108983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ddeb571c3dffc4e8896f25a5ba0167
+      internalID: -1234297579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 74
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65b68eb122cfc6468513519b57d14fd
+      internalID: 103253355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_14
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 74
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be5249dd2a3fadf41b7f23e00a24a8ec
+      internalID: 1670074072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_15
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 74
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e93ee19b30a7b438ee53810b93396a
+      internalID: 1964427380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674ab650bbb04284e8e7ccde65f3fb7e
+      internalID: 2083296405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 56
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095b242479e06b148b96ad8dff74fbe0
+      internalID: 1618389688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 56
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd2b10c65c25a544ea8e344950261159
+      internalID: -1966746310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GoodGuy3_19
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 56
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e843f04689c8b43844859f0530443e
+      internalID: -2114525119
       vertices: []
       indices: 
       edges: []
@@ -366,18 +534,26 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GoodGuyimproved_0: 1569234667
-      GoodGuyimproved_3: -1402098112
-      GoodGuyimproved_5: -343140917
-      GoodGuyimproved_6: -955594594
-      GoodGuyimproved_11: 369474821
-      GoodGuyimproved_1: -2053079646
-      GoodGuyimproved_8: -1910271382
-      GoodGuyimproved_7: 74649212
-      GoodGuyimproved_4: -1551277508
-      GoodGuyimproved_2: 391308499
-      GoodGuyimproved_10: 2119944910
-      GoodGuyimproved_9: -2074928730
+      GoodGuy3_5: -569108615
+      GoodGuy3_11: -1720108983
+      GoodGuy3_16: 2083296405
+      GoodGuy3_8: -1854121921
+      GoodGuy3_9: 930252640
+      GoodGuy3_19: -2114525119
+      GoodGuy3_17: 1618389688
+      GoodGuy3_7: -892463087
+      GoodGuy3_13: 103253355
+      GoodGuy3_2: -1604767697
+      GoodGuy3_14: 1670074072
+      GoodGuy3_15: 1964427380
+      GoodGuy3_18: -1966746310
+      GoodGuy3_3: 1815661184
+      GoodGuy3_10: -597920585
+      GoodGuy3_6: -565362160
+      GoodGuy3_4: 1889785830
+      GoodGuy3_0: -862763986
+      GoodGuy3_12: -1234297579
+      GoodGuy3_1: -673006362
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
