@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 261.9017, g: 324.45706, b: 429.4361, a: 1}
+  m_IndirectSpecularColor: {r: 262.3369, g: 325.0498, b: 430.21924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -432,8 +432,47 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1135378880}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1135378880}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 743320178}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Move
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UseEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TogglePause
+      objectReference: {fileID: 0}
+    - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerControler, Assembly-CSharp
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+--- !u!114 &743320178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1992493389221769849, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+  m_PrefabInstance: {fileID: 743320177}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6455a8a7f04113409a4a11ce6ad50b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809640323
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +511,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1135378880 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5373706259703778114, guid: 90022a50f52594d45bc2826f0ca4e6c4, type: 3}
+  m_PrefabInstance: {fileID: 1441209092}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebf80ac8ed5d214abf02f9adda29617, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1170179859
 PrefabInstance:
   m_ObjectHideFlags: 0
