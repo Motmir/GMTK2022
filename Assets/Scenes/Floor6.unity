@@ -5356,7 +5356,7 @@ PrefabInstance:
     - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 5373706259303785755}
+      objectReference: {fileID: 403082392}
     - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
       propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -5574,6 +5574,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d6455a8a7f04113409a4a11ce6ad50b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &403082392 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7233730885586767567, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
+  m_PrefabInstance: {fileID: 403082388}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cebf80ac8ed5d214abf02f9adda29617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &616407336
