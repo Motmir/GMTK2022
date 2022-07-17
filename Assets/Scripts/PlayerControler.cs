@@ -154,7 +154,7 @@ public class PlayerControler : MonoBehaviour
             }
             if (context.control.name == "rightButton")
             {
-                IFace face = new SpeedupFace();
+                IFace face = new ShotgunFace();
                 face.Init();
                 face.Cast();
             }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fireball : ParentBullet
+public class Pellet : ParentBullet
 {
     public override void OnTriggerEnter2D(Collider2D collider)
     {
@@ -11,7 +11,7 @@ public class Fireball : ParentBullet
             EnemyCombat hit = collider.GetComponent<EnemyCombat>();
             hit.Damage(damage);
         }
-        Destroy(gameObject);
+        Destroy(gameObject, 2);
     }
 
     public override void Setup(Vector3 Dir, int id)
