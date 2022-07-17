@@ -154,7 +154,7 @@ public class PlayerControler : MonoBehaviour
             }
             if (context.control.name == "rightButton")
             {
-                IFace face = new FireballFace();
+                IFace face = new SpeedupFace();
                 face.Init();
                 face.Cast();
             }

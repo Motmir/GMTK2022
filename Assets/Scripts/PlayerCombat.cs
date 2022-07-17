@@ -8,6 +8,21 @@ public class PlayerCombat : MonoBehaviour
     public int Health;
     public int Shield;
     
+    int time = 4;
+
+    public IEnumerator SpeedResetTimer(int time, int amount)
+    {
+        yield return new WaitForSecondsRealtime(time);
+        transform.GetComponent<PlayerControler>().maxSpeed -= amount;   
+    }
+
+    public void SpeedUp(int amount) {
+        transform.GetComponent<PlayerControler>().maxSpeed += amount;
+        StartCoroutine(SpeedResetTimer(time, amount));
+    }
+   
+   
+
     public void Damage(int amount)
     {
         var damageLeft = amount;
