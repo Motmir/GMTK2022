@@ -5644,6 +5644,8 @@ GameObject:
   - component: {fileID: 661934162}
   - component: {fileID: 661934164}
   - component: {fileID: 661934163}
+  - component: {fileID: 661934166}
+  - component: {fileID: 661934165}
   m_Layer: 0
   m_Name: Stuff
   m_TagString: Untagged
@@ -5706,13 +5708,13 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1775773855
   m_SortingLayer: 1
-  m_SortingOrder: -10
+  m_SortingOrder: -5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
-  m_Mode: 0
+  m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!1839735485 &661934164
@@ -6479,6 +6481,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &661934165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661934161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4abd72848349d04baeb2221892e83ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &661934166
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661934161}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.9207807, y: -11.044527}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32672405, y: 0.32000732}
+  m_EdgeRadius: 0
 --- !u!1001 &689384963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7117,7 +7157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9207828273471001450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.71, y: 0.28, z: 0}
+  m_LocalPosition: {x: 6.39, y: 1.36, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 2.0257902}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17522,6 +17562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cebf80ac8ed5d214abf02f9adda29617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigidbody2d: {fileID: 0}
+  pCombat: {fileID: 0}
   speed: 2
   maxSpeed: 9.25
   speedLoss: 2

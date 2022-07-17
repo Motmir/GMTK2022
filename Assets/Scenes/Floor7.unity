@@ -14583,6 +14583,8 @@ GameObject:
   - component: {fileID: 1641025316}
   - component: {fileID: 1641025318}
   - component: {fileID: 1641025317}
+  - component: {fileID: 1641025319}
+  - component: {fileID: 1641025320}
   m_Layer: 8
   m_Name: Items
   m_TagString: Untagged
@@ -14651,7 +14653,7 @@ TilemapRenderer:
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 0
-  m_Mode: 0
+  m_Mode: 1
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
 --- !u!1839735485 &1641025318
@@ -15092,15 +15094,42 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1676053699 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5373706259703778114, guid: 90022a50f52594d45bc2826f0ca4e6c4, type: 3}
-  m_PrefabInstance: {fileID: 1024476146}
+--- !u!61 &1641025319
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1641025315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 6.560158, y: 0.10128257}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.31764603, y: 0.18017489}
+  m_EdgeRadius: 0
+--- !u!114 &1641025320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641025315}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebf80ac8ed5d214abf02f9adda29617, type: 3}
+  m_Script: {fileID: 11500000, guid: e4abd72848349d04baeb2221892e83ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1983907521
@@ -15161,11 +15190,11 @@ PrefabInstance:
     - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
       propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1676053699}
+      objectReference: {fileID: 0}
     - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
       propertyPath: m_ActionEvents.Array.data[13].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1676053699}
+      objectReference: {fileID: 0}
     - target: {fileID: 7752052162489280941, guid: 5d0141714e255cd499268f24e33b7481, type: 3}
       propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
