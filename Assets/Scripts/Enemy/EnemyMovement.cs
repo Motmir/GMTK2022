@@ -2,60 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyMovement : MonoBehaviour
+public class EnemyMovement : ParentEnemyMove
 {
-    //Attributes
-    GameObject player;
-    LineRenderer lineRenderer;
-    Rigidbody2D rb;
-    public float detectionRange, speed, maxSpeed, speedLoss, timer;
-    bool madeLine, lockMove;
-    Vector3 movement, distance, goal;
 
-    public void OnTriggerEnter(Collider collider)
+    public override void OnTriggerEnter(Collider collider)
     {
         
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        player = GameObject.Find("Player");
-        rb = transform.GetComponent<Rigidbody2D>();
-    }
-
     // Update is called once per frame
-    void FixedUpdate()
+    public override void FixedUpdate()
     {
-        FindPlayer();
+        Move();
     }
 
-    public void Slide(int time)
+    public override void Slide(int time)
     {
         lockMove = true;
-        StartCoroutine(waiter());
+        StartCoroutine(lockMoveTimer(time));
     }
 
-    IEnumerator waiter()
+    public override void Move()
     {
-        yield return new WaitForSecondsRealtime(2);
-        lockMove = false;
-    }
-
-    void MoveToGoal()
-    {
-        movement = goal - transform.position;
-        movement.Normalize();
-
-        if (!lockMove)
-        {
-            rb.velocity = movement * speed;
-        }
-    }
-
-    void FindPlayer()
-    {
-        distance = player.transform.position - transform.position;
+        FindPlayer();
+        distance = playerPos.position - transform.position;
         distance.z = 0;
 
         if (distance.magnitude < detectionRange && !madeLine)
@@ -98,13 +68,10 @@ public class EnemyMovement : MonoBehaviour
                 timer = 3;
             }
         }
-        
     }
 
-    int Rand()
+    public override void ChooseRandomGoal()
     {
-        int pos = Random.Range(1, 3);
-        pos = (int)Mathf.Pow(-1, pos);
-        return pos;
+        throw new System.NotImplementedException();
     }
 }
