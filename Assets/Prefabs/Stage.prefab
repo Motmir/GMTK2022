@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 6564276642607683366}
   - component: {fileID: 174362819255118166}
   - component: {fileID: 8308626829423540796}
-  - component: {fileID: 5373706259703778114}
+  - component: {fileID: 7439546105740183564}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -543,7 +543,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &5373706259703778114
+--- !u!114 &7439546105740183564
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -552,11 +552,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9207828275215088947}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cebf80ac8ed5d214abf02f9adda29617, type: 3}
+  m_Script: {fileID: 11500000, guid: 4c2deafa3309d72458f8462a28b107c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
-  maxSpeed: 9.25
-  speedLoss: 2
-  speedCutoff: 3
-  turnModifier: 6
+  Health: 20
+  Shield: 0

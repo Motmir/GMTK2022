@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class HealthFace : IFace
 {
-    GameObject player;
-    PlayerCombat pComb;
-    public int ShieldAmount;
+    public int HealAmount = 2;
     Sprite icon;
 
     public void Init()
     {
-        player = GameObject.Find("Player");
-        pComb = GameManager.instace.playerControler.pCombat;
         icon = (Sprite)Resources.Load("UtilityFaces/Heal");
     }
 
     public void Cast()
     {
-        pComb.AddHealth(ShieldAmount);
+        GameManager.instace.playerControler.pCombat.AddHealth(HealAmount);
     }
 
     public Sprite GetSprite()

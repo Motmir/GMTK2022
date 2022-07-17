@@ -5,28 +5,28 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
 
-    public int Health;
-    public int Shield;
+    public int health = 20;
+    public int sheild = 0;
     
     public void Damage(int amount)
     {
         var damageLeft = amount;
-        while (Shield > 0  && damageLeft > 0)
+        while (sheild > 0  && damageLeft > 0)
         {
-            Shield -= 1;
+            sheild -= 1;
             damageLeft -= 1;
         }
 
-        Health -= damageLeft;
+        health -= damageLeft;
     }
 
     public void AddShield(int amount)
     {
-
+        sheild += amount;
     }
 
     public void AddHealth(int amount)
     {
-
+        health += amount;
     }
 }
