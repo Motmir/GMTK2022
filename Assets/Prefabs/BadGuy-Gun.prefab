@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2927179838293063706}
   - component: {fileID: 8777920600941106438}
   - component: {fileID: 4325949034723919282}
+  - component: {fileID: 143859258635014993}
   m_Layer: 0
   m_Name: BadGuy-Gun
   m_TagString: Untagged
@@ -154,3 +155,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &143859258635014993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6544936630319017100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b65da5c90a978341874379b48f11fc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  lineRenderer: {fileID: 0}
+  playerPos: {fileID: 0}
+  rb: {fileID: 0}
+  detectionRange: 0
+  speed: 0
+  maxSpeed: 0
+  speedLoss: 0
+  timer: 0
+  madeLine: 0
+  lockMove: 0
+  canSee: 0
+  movement: {x: 0, y: 0, z: 0}
+  distance: {x: 0, y: 0, z: 0}
+  goal: {x: 0, y: 0, z: 0}
+  directionVector: {x: 0, y: 0, z: 0}
+  baddudeanim: {fileID: 4325949034723919282}
