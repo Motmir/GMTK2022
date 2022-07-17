@@ -19,13 +19,13 @@ public class ClickButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         img.sprite = pressed;
-        source.PlayOneShot(compressClip);
+        //source.PlayOneShot(compressClip);
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         img.sprite = defaultB;
-        source.PlayOneShot(uncompressClip);
+        //source.PlayOneShot(uncompressClip);
     }
 
 }

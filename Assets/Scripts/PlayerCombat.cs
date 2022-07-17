@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -18,8 +19,18 @@ public class PlayerCombat : MonoBehaviour
         }
 
         health -= damageLeft;
+        if (health <= 0 )
+        {
+            Destroy(gameObject);
+            StartCoroutine(lockMoveTimer(3));
+        }
     }
 
+    public IEnumerator lockMoveTimer(int time)
+    {
+        yield return new WaitForSecondsRealtime(time);
+        SceneManager.LoadScene("Mainmenu");
+    }
     public void AddShield(int amount)
     {
         sheild += amount;

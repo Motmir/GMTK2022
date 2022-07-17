@@ -38,5 +38,18 @@ public class EnemyCombat : ParentEnemyCombat
         this.GetComponent<EnemyMovement>().speed = this.GetComponent<EnemyMovement>().maxSpeed;
     }
 
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (collider.GetComponent<GameObject>() != null) {
+            if (collider.GetComponent<GameObject>().name == "Player")
+            {
+                GameObject targetHit = collider.GetComponent<GameObject>();
+                GameManager.instace.playerControler.pCombat.Damage(1);
+            }
+        }
+
+
+        
+    }
 
 }
