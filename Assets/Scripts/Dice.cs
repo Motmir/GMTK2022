@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Dice
 {
-    private SpriteRenderer renderer = null;
     //------------------------------------------
     public enum diceType {Utility, Attack, Defence, Blank };
     //------------------------------------------
@@ -30,20 +29,19 @@ public class Dice
     }
 
 
-    private void FixedUpdate()
+    public void Update()
     {
         if (rolling && Time.time - faceChangeTime > 0.1 )
         {
 
             int i = Random.Range(0, faces.Length);
-            currentFace = faces[i];
-            Debug.Log(currentFace);
-            if (renderer.sprite = currentFace.GetSprite())
+            IFace f = faces[i];
+
+            if (currentFace == f)
             {
                 currentFace = faces[(i + 1)%faces.Length];
             }
 
-            renderer.sprite = currentFace.GetSprite();
             faceChangeTime = Time.time;
         }
         else if (faceChangeFinishTime < Time.time)
@@ -52,7 +50,10 @@ public class Dice
         }
     }
 
-    
+    public bool IsRolling()
+    {
+        return rolling;
+    }
 
     public void Roll()
     {

@@ -6,11 +6,13 @@ using UnityEngine.InputSystem;
 public class PlayerControler : MonoBehaviour
 {
     //Values
-    private Rigidbody2D rigidbody2d;
-    private BoxCollider2D boxCollider2d;
+    public Rigidbody2D rigidbody2d;
+    public PlayerCombat pCombat;
     private Vector2 moveVector;
     private Vector3 currMove;
     
+    Animator GoodGuyanim;
+       
     //Attributes
     public float speed = 2;
     public float maxSpeed = 9.25f;
@@ -26,13 +28,16 @@ public class PlayerControler : MonoBehaviour
     private void Awake() {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 144;
+        GoodGuyanim = GetComponent<Animator>();
     }
 
     // Start is called before the first frame update
-    void Start()
+    public void Rebind()
     {
-        rigidbody2d = transform.GetComponent<Rigidbody2D>();
-        boxCollider2d = transform.GetComponent<BoxCollider2D>();
+        GameObject player = GameObject.Find("Player");
+
+        rigidbody2d = player.GetComponent<Rigidbody2D>();
+        pCombat = player.GetComponent<PlayerCombat>();
     }
 
     // Update is called once per frame
@@ -59,9 +64,30 @@ public class PlayerControler : MonoBehaviour
             yMod = -1;
         }
 
+
+        GoodGuyanim.SetBool("WalkSide", true); //goodguy movement animations
+        if (Mathf.Abs(moveVector.x) > Mathf.Abs(moveVector.y))
+        {
+            GoodGuyanim.SetBool("WalkSide", true);
+            GoodGuyanim.SetBool("WalkUp", false);
+            GoodGuyanim.SetBool("WalkDown", false);
+        }
+        else if (moveVector.y > 0)
+        {
+            GoodGuyanim.SetBool("WalkSide", false);
+            GoodGuyanim.SetBool("WalkUp", true);
+            GoodGuyanim.SetBool("WalkDown", false);
+        }
+        else if (moveVector.y < 0)
+        {
+            GoodGuyanim.SetBool("WalkSide", false);
+            GoodGuyanim.SetBool("WalkUp", false);
+            GoodGuyanim.SetBool("WalkDown", true);
+        }
+
         int curX;
         int curY;
-
+        
         if (currMove.x >= 0) //Check if move right or left
         {
             curX = 1;
@@ -140,25 +166,43 @@ public class PlayerControler : MonoBehaviour
         moveVector = context.ReadValue<Vector2>();    
     }
 
-    public void UseEffect(InputAction.CallbackContext context)
+    public void UseAbillety(InputAction.CallbackContext context)
     {
         if (UIManager.paused) return;
         if (context.started)
         {
-            Debug.Log(context.control.name);
             if (context.control.name == "leftButton")
             {
-                IFace face = new GreaseFace();
-                face.Init();
-                face.Cast();
+                if (InventoryManager.instace.activeAttack.IsRolling()) return;
+                InventoryManager.instace.activeAttack.getFace().Cast();
+                InventoryManager.instace.activeAttack.Roll();
+                Debug.Log("attack");
             }
             if (context.control.name == "rightButton")
             {
-                IFace face = new FireballFace();
-                face.Init();
-                face.Cast();
+                if (InventoryManager.instace.activeDefence.IsRolling()) return;
+                InventoryManager.instace.activeDefence.getFace().Cast();
+                InventoryManager.instace.activeDefence.Roll();
+                Debug.Log("defend");
+            }
+            if (context.control.name == "space")
+            {
+                if (InventoryManager.instace.activeUtility.IsRolling()) return;
+                InventoryManager.instace.activeUtility.getFace().Cast();
+                InventoryManager.instace.activeUtility.Roll();
+                Debug.Log("util");
             }
         }
     }
 
+    public void OnTriggerEnter2D(Collider2D collider)
+    {
+        GameObject targetHit = collider.GetComponent<GameObject>();
+
+
+        if (targetHit.GetComponent<Transport>() as Transport != null)
+        {
+            targetHit.GetComponent<Transport>().LoadNextScene();
+        }
+    }
 }

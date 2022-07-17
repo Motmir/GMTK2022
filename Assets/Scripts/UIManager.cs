@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,6 +15,8 @@ public class UIManager : MonoBehaviour
     public SpriteRenderer offenceDie = null;
     public SpriteRenderer defenceDie = null;
     public SpriteRenderer utilityDie = null;
+    public GameObject hp = null;
+    public GameObject sheild = null;
 
     private void Awake()
     {
@@ -43,9 +47,17 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
+        hp.GetComponent<TextMeshProUGUI>().text = "HP: " +GameManager.instace.playerControler.pCombat.health;
+        sheild.GetComponent<TextMeshProUGUI>().text = "SHEILD: " + GameManager.instace.playerControler.pCombat.sheild;
+        InventoryManager.instace.activeAttack.Update();
+        InventoryManager.instace.activeDefence.Update();
+        InventoryManager.instace.activeUtility.Update();
         offenceDie.sprite = InventoryManager.instace.activeAttack.getFace().GetSprite();
         defenceDie.sprite = InventoryManager.instace.activeDefence.getFace().GetSprite();
         utilityDie.sprite = InventoryManager.instace.activeUtility.getFace().GetSprite();
+
+
+
     }
 
 
