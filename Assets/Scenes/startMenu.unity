@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 262.3369, g: 325.0498, b: 430.21924, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -510,6 +510,11 @@ PrefabInstance:
     - target: {fileID: 1280711199958337445, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1280711200871361010, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
+      propertyPath: m_text
+      value: "Offensive ability = left click\tDefensive ability = right click\tUtlity
+        ability = space\n\nAbilities Reroll on use\nFind Exit To Progress\n\n\nCredits\n\t\tAuburnGhost\t\t\tMotmir\n\t\tLiz\t\t\t\tHanna\n\t\tEmma\t\t\t\tAllenskiiiiiiiiiii\n\t\tIda\n\n\n"
       objectReference: {fileID: 0}
     - target: {fileID: 1280711201651703485, guid: 00ac7db8ea75f7e4195315dce95bd230, type: 3}
       propertyPath: m_IsActive
