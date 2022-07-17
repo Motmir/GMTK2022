@@ -74,6 +74,7 @@ public class GameManager : MonoBehaviour
                 InventoryManager.instace.activeUtility = new Dice(new Dice.enumFace[] { Dice.enumFace.VineFace, Dice.enumFace.HealFace });
                 break;
             case "mainMenu":
+                Debug.Log("delete GameManager plz");
                 DestroyImmediate(gameObject);
                 break;
             default:
