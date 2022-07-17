@@ -12,7 +12,7 @@ public class HealthFace : IFace
     public void Init()
     {
         player = GameObject.Find("Player");
-        pComb = player.transform.GetComponent<PlayerCombat>();
+        pComb = GameManager.instace.playerControler.pCombat;
         icon = (Sprite)Resources.Load("UtilityFaces/Heal");
     }
 

@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    private static GameManager instace = null;
-    public PlayerControler player= null;
+    public static GameManager instace = null;
+
+    public PlayerControler playerControler = null;
+
 
     private void Awake()
     {
@@ -32,7 +34,7 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
 
-        player.Rebind();
+        playerControler.Rebind();
 
         switch (scene.name)
         {
