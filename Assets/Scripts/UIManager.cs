@@ -47,7 +47,7 @@ public class UIManager : MonoBehaviour
 
     private void Update()
     {
-        hp.GetComponent<TextMeshProUGUI>().text = "HP: " +GameManager.instace.playerControler.pCombat.health;
+        hp.GetComponent<TextMeshProUGUI>().text = "HP: " + GameManager.instace.playerControler.pCombat.health;
         sheild.GetComponent<TextMeshProUGUI>().text = "SHEILD: " + GameManager.instace.playerControler.pCombat.sheild;
         InventoryManager.instace.activeAttack.Update();
         InventoryManager.instace.activeDefence.Update();

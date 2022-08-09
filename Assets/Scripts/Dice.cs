@@ -57,7 +57,7 @@ public class Dice
 
     public void Roll()
     {
-        faceChangeFinishTime = Time.time + 3;
+        faceChangeFinishTime = Time.time + 0;
         rolling = true;
     }
 

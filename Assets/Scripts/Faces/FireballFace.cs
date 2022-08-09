@@ -8,12 +8,12 @@ public class FireballFace : IFace
     GameObject pfBullet, player;
     Transform trans;
     Rigidbody2D rb;
-    Vector3 mouse;
+    Vector3 mousePos;
     Camera cam;
     Sprite icon;
 
     //Values
-    float distFromPlayer = 0f;
+    float distFromPlayer = 5f;
 
     public void Init()
     {
@@ -22,21 +22,40 @@ public class FireballFace : IFace
         trans = player.GetComponent<Transform>();
         rb = player.GetComponent<Rigidbody2D>();
         cam = player.GetComponentInChildren<Camera>();
-        mouse = cam.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         icon = (Sprite)Resources.Load("AttackFaces/Fireball");
     }
 
     public void Cast()
     {
         Vector3 spellSpawn = new(trans.position.x, trans.position.y, 0);
-        mouse.z = 0;
-        mouse -= spellSpawn;
-        mouse.Normalize();
-        Vector3 dist = mouse * distFromPlayer;
+
+        mousePos = Mouse.current.position.ReadValue();
+        mousePos.z = 0;
+        mousePos = cam.ScreenToWorldPoint(mousePos);
+        mousePos.z = 0;
+
+        LineRenderer lineRenderer = new GameObject("Line").AddComponent<LineRenderer>();
+        lineRenderer.startColor = Color.black;
+        lineRenderer.endColor = Color.black;
+        lineRenderer.startWidth = 0.01f;
+        lineRenderer.endWidth = 0.01f;
+        lineRenderer.positionCount = 2;
+        lineRenderer.useWorldSpace = true;
+        lineRenderer.sortingOrder = 1;
+        lineRenderer.sortingLayerName = "Entity";
+
+        lineRenderer.SetPosition(0, spellSpawn);
+        lineRenderer.SetPosition(1, mousePos);
+
+        mousePos.z = 0;
+        mousePos -= spellSpawn;
+        
+        mousePos.Normalize();
+        Vector3 dist = mousePos * distFromPlayer;
         spellSpawn += dist;
 
         GameObject bulletTransform = GameObject.Instantiate(pfBullet, spellSpawn, Quaternion.identity);
-        bulletTransform.GetComponent<Fireball>().Setup(mouse);
+        bulletTransform.GetComponent<Fireball>().Setup(mousePos);
     }
 
     public Sprite GetSprite()

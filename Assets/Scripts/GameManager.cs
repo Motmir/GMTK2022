@@ -73,6 +73,11 @@ public class GameManager : MonoBehaviour
                 InventoryManager.instace.activeDefence = new Dice(new Dice.enumFace[] { Dice.enumFace.IceFace, Dice.enumFace.EmptyFace });
                 InventoryManager.instace.activeUtility = new Dice(new Dice.enumFace[] { Dice.enumFace.VineFace, Dice.enumFace.HealFace });
                 break;
+            case "TestScene":
+                InventoryManager.instace.activeAttack = new Dice(new Dice.enumFace[] { Dice.enumFace.FireballFace, Dice.enumFace.FireballFace });
+                InventoryManager.instace.activeDefence = new Dice(new Dice.enumFace[] { Dice.enumFace.IceFace, Dice.enumFace.IceFace });
+                InventoryManager.instace.activeUtility = new Dice(new Dice.enumFace[] { Dice.enumFace.VineFace, Dice.enumFace.HealFace });
+                break;
             case "mainMenu":
                 Debug.Log("delete GameManager plz");
                 DestroyImmediate(gameObject);

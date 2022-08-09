@@ -29,6 +29,8 @@ public class PlayerControler : MonoBehaviour
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 144;
         GoodGuyanim = GetComponent<Animator>();
+        rigidbody2d = transform.GetComponent<Rigidbody2D>();
+        pCombat = transform.GetComponent<PlayerCombat>();
     }
 
     // Start is called before the first frame update
@@ -37,6 +39,7 @@ public class PlayerControler : MonoBehaviour
         GameObject player = GameObject.Find("Player");
 
         rigidbody2d = player.GetComponent<Rigidbody2D>();
+        Debug.Log(player);
         pCombat = player.GetComponent<PlayerCombat>();
     }
 
